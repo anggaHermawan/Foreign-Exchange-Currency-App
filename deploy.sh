@@ -9,7 +9,7 @@ fi
 
 echo == Stop and remove existing container ==
 
-name="demo-2.0-front"
+name="Foreign-Exchange-Currency-App"
 
 if [ "$(docker ps -q -f name=$name)" ]; then
     # stop
