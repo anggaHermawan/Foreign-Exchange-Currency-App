@@ -1,6 +1,6 @@
 echo == Prepare working folder ==
 
-WORKING_FOLDER="./Foreign-Exchange-Currency-App/"
+WORKING_FOLDER="./foreign-exchange-currency-app/"
 
 if [ -d "$WORKING_FOLDER" ]; then
   # Control will enter here if $WORKING_FOLDER exists.
@@ -9,7 +9,7 @@ fi
 
 echo == Stop and remove existing container ==
 
-name="Foreign-Exchange-Currency-App"
+name="foreign-exchange-currency-app"
 
 if [ "$(docker ps -q -f name=$name)" ]; then
     # stop
@@ -21,7 +21,7 @@ if [ "$(docker ps -aq -f status=exited -f name=$name)" ]; then
     docker rm $name
 fi
 
-WORKING_FOLDER="./Foreign-Exchange-Currency-App/"
+WORKING_FOLDER="./foreign-exchange-currency-app/"
 
 if [ -d "$WORKING_FOLDER" ]; then
   # Control will enter here if $WORKING_FOLDER exists.
@@ -30,13 +30,13 @@ fi
 
 echo == Git Clone branch master ==
 
-git clone -b master https://github.com/anggaHermawan/Foreign-Exchange-Currency-App.git
+git clone -b master https://github.com/anggaHermawan/foreign-exchange-currency-app.git
 
 echo == Build and  run docker image ==
-cd Foreign-Exchange-Currency-App
-docker build -f Dockerfile -t "Foreign-Exchange-Currency-App" .
-docker tag Foreign-Exchange-Currency-App Foreign-Exchange-Currency-App:latest
-docker create --name Foreign-Exchange-Currency-App -p 13000:3000 Foreign-Exchange-Currency-App
-docker start Foreign-Exchange-Currency-App
+cd foreign-exchange-currency-app
+docker build -f Dockerfile -t "foreign-exchange-currency-app" .
+docker tag foreign-exchange-currency-app foreign-exchange-currency-app:latest
+docker create --name foreign-exchange-currency-app -p 13000:3000 foreign-exchange-currency-app
+docker start foreign-exchange-currency-app
 
 echo == Done, please check http://ip-address:13000 ==
