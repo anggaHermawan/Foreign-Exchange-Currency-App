@@ -215,7 +215,11 @@
       onSubmit (){
         if(this.currency != null){
           this.dataList.push(this.currency)
-          this.currencies_items.splice(this.currency,1)
+          for (let j =0 ; j < this.currencies_items.length ; j++){
+            if(this.currencies_items[j].text == this.currency.text){
+              this.currencies_items.splice(j,1)
+            }
+          }
           let itemsData = {
             calculateBaseValue: 0,
             base: '',
