@@ -1,22 +1,43 @@
-# webapps
+Foreign-Exchange-Currency-App
 
-> version 1.0
+########################################################################
+############## Stack Tech Versions and Environment #####################
 
-## Build Setup
+JS Framework		: Vue.js(2.5.16)
+Vue JS Framework	: Nuxt.js(1.0.0) 
+FE UI Framework 	: Veutify(1.1.10) - material-design-icons (3.0.1)
+HTTP client plugin  : Axios(0.18.0)
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+Developed & Tested On Google Chrome (Version 68.0.3440.106)
+
+########################################################################
+
+
+######################################################################################################
+############### Docker Deployment (Already tested on Linux Mint Sylvia) ##############################
+
+*From terminal
+Please execeute file deploy.sh for docker deployment.
+
+*From Jenkins (Publish Over SSH)
+Please copy code from file deploy.sh and configure it on jenkins ssh coomand
+
+######################################################################################################
+
+
+#######################################################################
+###############################  Local test ###########################
+
+- get the ressources
+1. Clone or Download from this repo(https://github.com/anggaHermawan/Foreign-Exchange-Currency-App.git).
+
+# install the dependencies:
+2. cd Foreign-Exchange-Currency-App
+3. npm install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+4. npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm start
+#######################################################################
 
-# generate static project
-$ npm run generate
-```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
