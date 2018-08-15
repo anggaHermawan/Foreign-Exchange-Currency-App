@@ -16,7 +16,7 @@ Developed & Tested On Google Chrome (Version 68.0.3440.106)
 2. sh deploy.sh 
 
 - From Jenkins (Publish Over SSH)
-Please copy code from file deploy.sh and configure it on jenkins ssh coomand
+Please copy code from file deploy.sh and configure it on jenkins ssh command
 
 # Local test
 
