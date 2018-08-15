@@ -11,16 +11,16 @@ Developed & Tested On Google Chrome (Version 68.0.3440.106)
 
 # Docker Deployment (Already tested on Linux Mint Sylvia)
 
--From terminal (Please execeute file deploy.sh for docker deployment.)
+- From terminal (Please execeute file deploy.sh for docker deployment.)
 1. cd Foreign-Exchange-Currency-App
 2. sh deploy.sh 
 
--From Jenkins (Publish Over SSH)
+- From Jenkins (Publish Over SSH)
 Please copy code from file deploy.sh and configure it on jenkins ssh coomand
 
 # Local test
 
-- get the ressources
+- get the resources
 1. Clone or Download from this repo(https://github.com/anggaHermawan/Foreign-Exchange-Currency-App.git).
 
 - install the dependencies:
