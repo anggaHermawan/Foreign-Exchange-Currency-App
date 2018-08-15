@@ -1,8 +1,8 @@
 {
-  "name": "webapps",
+  "name": "Foreign-Exchage-Currency",
   "version": "1.0.0",
   "description": "version 1.0",
-  "author": "Angga Hermawan",
+  "author": "Muhammad Angga Huda Hermawan",
   "private": true,
   "scripts": {
     "dev": "nuxt",
